@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kolker+Brush&family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1e702862f4.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>To Do List</h1>
+
+    </header>
+
+    <main>
+
+        <form>
+
+            <div id="titre_text">
+                <label for="titre">Titre :</label>
+                <input type="text" id="titre"><br>
+            </div>
+
+            <span id="titre_span"></span>
+
+            <div id="descr">
+                <label for="description">Description :</label>
+                <textarea id="description"></textarea><br>
+            </div>
+
+            <span id="description_span"></span>
+            
+            <div id="date">
+                
+                <div id="date_d">
+                    <label for="dd">Date de debut :</label>
+                    <input type="date" id="dd">
+                </div>
+
+                <div id="date_f">
+                    <label for="df">Date de fin :</label>
+                    <input type="date" id="df"><br>
+                </div>
+
+            </div>
+            
+            <span id="Dd_span"></span>
+            <span id="Df_span"></span>
+
+            <div id="prio">Priorite</div>
+            
+            <div class="container">
+                <input type="checkbox" id="check">
+                <label for="check" class="button"></label>
+            </div>
+
+            <button type="button" id="ajouter" onclick="ajoute()"> Ajouter</button>
+            <button type="reset" id="annuler"> Annuler</button>
+
+        </form>
+
+        <div id="affich">
+
+            <ul id="output">
+                
+            </ul>
+
+        </div>
+
+    </main>
+    
+</body>
+</html>
